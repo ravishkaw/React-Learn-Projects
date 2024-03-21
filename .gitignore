@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 ./emojipedia/node_modules
+calculatorapp/node_modules
+portfolio/node_modules
+bookapp/node_modules
+
+/readgit.md
 
 # testing
 /coverage
@@ -22,3 +27,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
