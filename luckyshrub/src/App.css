@@ -3,6 +3,9 @@
 
 /* font-family: 'PT Sans', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-weight: 400;
@@ -42,6 +45,7 @@ nav li a {
 
 section {
   display: flex;
+  scroll-margin-top: 2rem;
 }
 
 article {
