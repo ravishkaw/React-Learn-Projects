@@ -1,8 +1,12 @@
+import { teams } from "./datalist";
+
 const Aboutus = () => {
   return (
     <>
-      <h1 className="topic">About Us</h1>
-      <section id="about_us">
+      <h1 id="about_us" className="topic">
+        About Us
+      </h1>
+      <section>
         <article className="about">
           <p>
             Welcome to Lucky Shrub, a medium-sized garden design firm based in
@@ -16,24 +20,19 @@ const Aboutus = () => {
           </p>
         </article>
       </section>
+
       <section>
         <article className="about">
           <h4>Meet Our Team</h4>
           <p>
-            <b>Jason - Garden Architect : </b> Jason, our talented garden
-            architect, is the creative force behind every design at Lucky Shrub.
-            With years of experience and a keen eye for detail, he meticulously
-            crafts captivating outdoor spaces that reflect your style and
-            preferences. Jason also manages our team of skilled landscapers,
-            ensuring that every project is executed with precision and
-            expertise. <br />
-            <br />
-            <b>Maria - Marketing Manager : </b> Maria is the marketing
-            mastermind behind Lucky Shrub. With her strategic mindset and
-            creative flair, she ensures that our brand reaches the right
-            audience and communicates our values effectively. Maria also
-            oversees our plant nursery, where she curates a collection of
-            top-quality indoor and outdoor plants for our clients to enjoy.
+            {teams.map((team) => {
+              const { id, name, details } = team;
+              return (
+                <span key={id}>
+                  <b>{name}</b> {details} <br />
+                </span>
+              );
+            })}
           </p>
         </article>
         <article className="about">
@@ -59,5 +58,5 @@ const Aboutus = () => {
       </section>
     </>
   );
-}
-export default Aboutus
+};
+export default Aboutus;

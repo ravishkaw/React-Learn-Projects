@@ -1,12 +1,14 @@
+import logo from '../assests/images/logo.png'
+
 const Footer = () => {
   return (
     <footer>
       <div>
-        <img src="./resources/images/logo.png" alt="footer-logo" />
+        <img src={logo} alt="footer-logo" />
       </div>
       <div>
         <hr />
-        <p>© 2023 Ravishka Wijerathne. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Ravishka Wijerathne. All rights reserved.</p>
       </div>
     </footer>
   );

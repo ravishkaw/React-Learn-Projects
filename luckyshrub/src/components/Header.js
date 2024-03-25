@@ -1,7 +1,9 @@
+import logo from '../assests/images/logo.png'
+
 const Header = () => {
   return (
     <header>
-      <img src="./resources/images/logo.png" alt="Logo" />
+      <img src={logo} alt="Logo" />
     </header>
   );
 };

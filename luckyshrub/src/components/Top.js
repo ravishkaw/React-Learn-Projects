@@ -1,3 +1,5 @@
+import { topCards } from "./datalist";
+
 const Top = () => {
   return (
     <>
@@ -15,36 +17,15 @@ const Top = () => {
       <br />
 
       <section>
-        <article className="card">
-          <h3>Our Services</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et
-          </p>
-          <a href="./services.html"> See our services </a>
-        </article>
-
-        <article className="card">
-          <h3>What's New</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et
-          </p>
-        </article>
-
-        <article className="card">
-          <h3>Opening Hours</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-            <br />
-            <br />
-            Mon - Fri : 8 am - 10 pm
-            <br />
-            Sat - Sun : 9 am - 11 pm
-          </p>
-        </article>
+        {topCards.map((data) => {
+          const { id, title, content } = data;
+          return (
+            <article className="card" key={id}>
+              <h3>{title}</h3>
+              <p>{content}</p>
+            </article>
+          );
+        })}
       </section>
     </>
   );

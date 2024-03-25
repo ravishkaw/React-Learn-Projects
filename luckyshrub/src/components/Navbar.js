@@ -1,19 +1,16 @@
+import { pageLinks } from "./datalist";
+
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li>
-          <a href="#">Home Page</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#about_us">About Us</a>
-        </li>
-        <li>
-          <a href="#contact_us">Contact</a>
-        </li>
+        {pageLinks.map((links) => {
+          return (
+            <li key={links.id}>
+              <a href={links.href}>{links.text}</a>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

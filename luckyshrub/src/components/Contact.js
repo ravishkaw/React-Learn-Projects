@@ -1,9 +1,11 @@
 const Contact = () => {
   return (
     <>
-      <h1 className="topic">Contact Us</h1>
+      <h1 id="contact_us" className="topic">
+        Contact Us
+      </h1>
 
-      <section id="contact_us">
+      <section>
         <article className="contact">
           <h2>Get in Touch</h2>
           <p>
@@ -33,7 +35,7 @@ const Contact = () => {
         <article className="contact">
           <h2>Contact Form</h2>
           <form action="#" method="POST">
-            <label for="name">Name:</label>
+            <label htmlFor="name">Name:</label>
             <input
               type="text"
               id="name"
@@ -42,7 +44,7 @@ const Contact = () => {
               required
             />
             <br />
-            <label for="email">Email:</label>
+            <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -51,7 +53,7 @@ const Contact = () => {
               required
             />
             <br />
-            <label for="message">Message:</label>
+            <label htmlFor="message">Message:</label>
             <textarea
               id="message"
               name="message"
@@ -66,5 +68,5 @@ const Contact = () => {
       </section>
     </>
   );
-}
-export default Contact
+};
+export default Contact;
