@@ -33,7 +33,7 @@ const Services = () => {
           </ul>
 
           <p>
-            <a href="#contact">Contact us</a> today to schedule a consultation
+            <a href="#contact_us">Contact us</a> today to schedule a consultation
             and let us help you create the garden of your dreams. Together,
             we'll transform your space into an oasis you can be proud of.
           </p>
